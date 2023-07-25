@@ -1,0 +1,244 @@
+/* Default Theme */
+:root {
+  --primary-color: #2980b9;
+  --secondary-color: #f1c40f;
+}
+
+/* Alternative Theme */
+:root.theme-alternative {
+  --primary-color: #c0392b;
+  --secondary-color: #27ae60;
+}
+
+.container {
+  position: relative; 
+  padding: 0px 20px;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  box-shadow: 1px 1px 4px rgba(43, 39, 39, 0.614);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 40%;
+  color: var(--primary-color);
+}
+
+.input-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container select{
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.input-container button {
+  padding: 8px 20px;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+li.completed {
+  background-color: #e0e0e0;
+  text-decoration: line-through;
+  color: #888;
+}
+
+li > span {
+  flex: 1;
+  margin-right: 10px;
+}
+
+li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+li button:hover {
+  color: #ff0000;
+}
+
+/* Theme Selector */
+.theme-selector {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.theme-selector label {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-selector input[type="radio"] {
+  display: none;
+}
+
+.theme-selector input[type="radio"] + span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-bottom: -4px;
+  margin-right: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #888;
+}
+
+.theme-selector input[type="radio"]:checked + span {
+  border-color: var(--primary-color);
+}
+
+.theme-selector input[type="radio"]:checked + span::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+  border-radius: 50%;
+  background-color: var(--primary-color); 
+}
+
+.categories {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--primary-color);
+  
+}
+
+.categories label{
+  margin: 0.6vw;
+}
+
+.sorting {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--primary-color); 
+}
+.sorting label{
+  margin: 0.6vw;
+}
+
+.total-task-count {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #000; 
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.search-bar {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--secondary-color);
+}
+
+.search-section {
+  margin-left: auto;
+}
+.search-section input{
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.664);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-section {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10 20px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list {
+  position: relative;
+  z-index: 1;
+  
+}
+
+.clear-button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.task-list-section{
+  height: 63vh;
+  overflow: auto;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+}

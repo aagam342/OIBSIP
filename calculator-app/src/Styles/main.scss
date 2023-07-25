@@ -1,0 +1,145 @@
+html {
+   background-image: url('./My project.png');
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat:repeat;
+  background-size: 1500px 753px;
+  background-blend-mode:darken; 
+  
+}
+
+.App h1 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  
+  text-shadow: 1rem 1rem 0.5rem #7d25ca;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+}
+
+.calci {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  min-height: 450px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 1rem;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  width: 24rem;
+ 
+  
+  
+}
+
+.display {
+  height: 2rem;
+  background-color: #fff;
+  border: 2px solid #464acc;
+  border-radius: 6px;
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  text-align: right;
+  font-size: 1.75rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  background-color: #efa356;
+  border: 2px groove #525252;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.125rem;
+  font-size: 1.25rem;
+  width: 3.5rem;
+  height: 2.5rem;
+}
+
+.button:active {
+  background-color: #6e6964;
+}
+
+.button-label {
+  display: block;
+  text-align: center;
+}
+
+.history-list {
+  margin: 0.625rem 0;
+  background-color: #fff;
+  border: 2px solid #464acc;
+  border-radius: 6px;
+  padding: 0.625rem;
+  max-height: 7.1875rem;
+  overflow-y: auto;
+}
+
+.history-section {
+  margin: 0.9375rem 0.125rem 0 0;
+  width: 100%;
+}
+
+.history-button {
+  background-color: #7d25ca;
+  color: #fff;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.105rem;
+  font-size: 1.2rem;
+  width: 8.5rem;
+  height: 2.5rem;
+}
+
+.history-section h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.history-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.15rem 0;
+}
+
+.history-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  border: 1px groove grey;
+}
+
+.expression {
+  font-weight: bold;
+}
+
+.result {
+  color: #888;
+}
+
+.clear-history-button {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 2px groove #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    max-width: 90%;
+  }
+}

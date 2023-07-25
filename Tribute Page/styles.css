@@ -1,0 +1,143 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 15vw;
+  padding: 1.5vw;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1vw;
+}
+
+header h1 {
+  margin-bottom: 2vh;
+}
+header img {
+  width: 70vw;
+  height: 86.5vh;
+}
+
+main {
+  padding: 3vw 0;
+}
+
+section {
+  margin-bottom: 6vh;
+}
+
+.sections-heading {
+  margin-bottom: 6vh;
+}
+
+/* Styling for the introduction section */
+#introduction,
+p,
+ul {
+  font-size: 3vh;
+  word-spacing: 0.5vw;
+}
+
+/* Styling for the quotes and speeches section */
+.quotes-and-speeches-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quotes-box {
+  margin: 1vw;
+  padding: 1vw;
+  background-color: #cae9ff;
+  box-shadow: -8px 8px 2px slategray;
+}
+
+#leadership-and-global-impact p {
+  border-left: 3px solid #333;
+  padding-left: 0.5vw;
+}
+
+/* Styling for the public welfare initiatives section */
+.welfare-img {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welfare-img img {
+  width: 25vw;
+  height: 50vh;
+  box-shadow: -8px 8px 2px slategray;
+}
+
+h2 {
+  letter-spacing: 0.4vw;
+  font-size: x-large;
+  text-shadow: -4px 4px 2px slategray;
+}
+
+/* Footer styling */
+footer {
+  border-top: 2px solid slategray;
+  color: black;
+  text-align: center;
+  padding: 2vh;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.accordion-item {
+  border-radius: 0%;
+}
+
+.accordion {
+  border: 2px groove slategray;
+  box-shadow: -8px 8px 1px 1px slategray;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  #introduction {
+    font-size: 16px;
+  }
+
+  .quotes-and-speeches-section {
+    flex-direction: column;
+  }
+
+  .quotes-box {
+    margin-bottom: 3vh;
+  }
+
+  .welfare-img {
+    flex-direction: column;
+  }
+
+  .welfare-img img {
+    width: 70vw;
+    height: 50vh;
+    box-shadow: -8px 8px 2px slategray;
+    margin-bottom: 2vh;
+  }
+
+  ul li::before {
+    width: 2vh;
+    height: 2vh;
+  }
+}
